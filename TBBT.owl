@@ -1,0 +1,942 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/liliu/ontologies/2018/1/TheBigBangTheory.owl/"
+     xml:base="http://www.semanticweb.org/liliu/ontologies/2018/1/TheBigBangTheory.owl/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/liliu/ontologies/2018/1/TheBigBangTheory.owl">
+        <rdfs:comment>The big bang theory ontology that describe the introduction, actors, and characters themes, awards about this TV show.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasAnactor -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasAnactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPerformer"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isAnActorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:isDefinedBy>The actors in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasAnactress -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasAnactress">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPerformer"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isAnActressOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:isDefinedBy>The actresses in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasCharacterNamed -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasCharacterNamed">
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheRoleIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:isDefinedBy>The five role name in the show</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasElementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasElementOf">
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheElementOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:isDefinedBy>The theme in the show</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasFemaleCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasFemaleCharacter">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasCharacterNamed"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheFemaleRoleIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:isDefinedBy>The female role in the show</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasMaleCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasMaleCharacter">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasCharacterNamed"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheMaleRoleIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:isDefinedBy>The male role in the show</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasPerformer -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasPerformer">
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isPerformerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:isDefinedBy>The actors and actresses in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasPlayTheRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasPlayTheRole">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:isDefinedBy>The actors and actress inTBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasProduce -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasProduce">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:isDefinedBy>The details about the production of the show</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasRelationshipElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasRelationshipElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasElementOf"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheRelationshipElementOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:isDefinedBy>The theme about relationship in the show</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasTvshowElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasTvshowElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasElementOf"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheTVshowElementOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:isDefinedBy>The theme about TV shows in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasWon -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasWon">
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:isDefinedBy>People or organziaitn won the award</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasWonGroupAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasWonGroupAward">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasWon"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonGroupAwardBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:isDefinedBy>The organization won award becasue of TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasWonIndividualAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasWonIndividualAward">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasWon"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonIndividualAwardBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:isDefinedBy>The individual won award becasue of TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isAnActorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isAnActorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isPerformerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The actors in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isAnActressOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isAnActressOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isPerformerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The actress in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isPerformerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isPerformerOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The actors and actresses in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isTheElementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isTheElementOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The theme in the show</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isTheFemaleRoleIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isTheFemaleRoleIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheRoleIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The female character  in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isTheMaleRoleIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isTheMaleRoleIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheRoleIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The male character in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isTheRelationshipElementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isTheRelationshipElementOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheElementOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The theme about relationship in the show</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isTheRoleIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isTheRoleIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The character in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isTheTVshowElementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isTheTVshowElementOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheElementOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>The theme about TV shows in TBBT</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#wasWonBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#wasWonBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>People or organziaitn won the award</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#wasWonGroupAwardBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#wasWonGroupAwardBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>organziaitn won the award</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#wasWonIndividualAwardBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#wasWonIndividualAwardBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+        <rdfs:isDefinedBy>People won the award</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Best_Television_Series -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Best_Television_Series">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:isDefinedBy>The Golden Globe Award for Best Television Series – Musical or Comedy is one of the annual Golden Globe Awards given to the best comedy television series.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Howard_Wolowitz -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Howard_Wolowitz">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheRoleIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An aerospace engineer. Howard is Jewish and lives with his mother, Debbie (Carol Ann Susi). Unlike Sheldon, Leonard, Raj, Bernadette and Amy, Howard does not hold a doctorate. He goes into space, training as an astronaut and serving as a payload specialist. Howard initially fancies himself as a womanizer, but he later starts dating Bernadette, and they get engaged and married. Howard also has a tendency to waste money on toys and argues with Bernadette because of his oddly low income as an engineer and her high income as a pharmaceutical biochemist.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Individual_achievement_in_comedy -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Individual_achievement_in_comedy">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonIndividualAwardBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Jim_Parsons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The TCA Award for Individual Achievement in Comedy is an award given by the Television Critics Association</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Jim_Parsons -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Jim_Parsons">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isAnActorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPlayTheRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Sheldon_Cooper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>James Joseph &quot;Jim&quot; Parsons (born March 24, 1973) is an American actor. He is known for playing Sheldon Cooper in the CBS sitcom The Big Bang Theory. He has received several awards for his performance, including four Primetime Emmy Awards for Outstanding Lead Actor in a Comedy Series and the Golden Globe Award for Best Actor in a Television Series Musical or Comedy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Johnny_Galecki -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Johnny_Galecki">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isAnActorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPlayTheRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Leonard_Hofstadter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>John Mark Galecki (born April 30, 1975)[1] is an American actor. He is known for playing Dr. Leonard Hofstadter in the CBS sitcom The Big Bang Theory since 2007 and David Healy in the ABC sitcom Roseanne from 1992 to 1997. Galecki also appeared in the films National Lampoon&apos;s Christmas Vacation (1989), Prancer (1989), Suicide Kings (1997), I Know What You Did Last Summer (1997), Bookies (2003), In Time (2011), and Rings (2017).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Kaley_Cuoco -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Kaley_Cuoco">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPlayTheRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Penny"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isAnActressOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Kaley Christine Cuoco (/ˈkeɪli ˈkwoʊkoʊ/ KAY-lee KWOH-koh; born November 30, 1985)[1] is an American actress. After a series of supporting film and television roles in the late 1990s, she landed her breakthrough role as Bridget Hennessy on the ABC sitcom 8 Simple Rules, on which she starred from 2002 to 2005. Thereafter, Cuoco appeared as Billie Jenkins on the final season of the television series Charmed (2005–2006). Since 2007, she has starred as Penny on the CBS sitcom The Big Bang Theory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Kunal_Nayyar -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Kunal_Nayyar">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isAnActorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPlayTheRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Rajesh_Koothrappali"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Kunal Nayyar (/kʊˌnɑːl ˈnaɪər/; born 30 April 1981) is a British Asian actor known for his role as Rajesh Koothrappali in the CBS sitcom The Big Bang Theory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Leonard_Hofstadter -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Leonard_Hofstadter">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheMaleRoleIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An experimental physicist with an IQ of 173, who received his PhD when he was 24 years old. Leonard is a nerd who loves video games, comic books, and Dungeons &amp; Dragons. Leonard is the straight man of the series, in which he shares an apartment in Pasadena, CA, with Sheldon. Leonard is smitten with his new neighbor Penny when they first meet, and they eventually marry.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Penny -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Penny">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheRoleIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheFemaleRoleIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An aspiring actress from Omaha, Nebraska. Penny moves in across the hall from Sheldon and Leonard. She waits and occasionally tends the bar at the Cheesecake Factory. After giving up hope of becoming a successful actress, Penny becomes a pharmaceutical sales representative. Penny becomes friends with Bernadette and Amy, and they often hang out in each other&apos;s apartments. Penny and Leonard form a relationship and eventually marry.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Rajesh_Koothrappali -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Rajesh_Koothrappali">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheMaleRoleIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A particle astrophysicist originally from New Delhi, India. Raj is initially unable to talk to women unless he drinks alcohol. Raj also has very feminine tastes and often takes on a stereotypical female role. Raj later dates Lucy (Kate Micucci), who also suffers from social anxiety, but it eventually ends; he later speaks to Penny without alcohol and thus overcomes his selective mutism. He begins dating Emily and their relationship later becomes exclusive. Raj also has a Yorkshire Terrier named Cinnamon.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S1 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S1">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:1
+Episodes:17
+First aired:09-24-2007
+Last aired:05-19-2008
+Viewers(millions):8.31</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S10 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S10">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:10
+Episodes:24
+First aired:09-19-2016
+Last aired:05-11-2017
+Viewers(millions):18.99</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S2 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S2">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:2
+Episodes:23
+First aired:09-22-2008
+Last aired:05-11-2009
+Viewers(millions):10.03</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S3 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S3">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Science"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Season:3
+Episodes:23
+First aired:09-21-2009
+Last aired:05-24-2010
+Viewers(millions):14.22</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S4 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S4">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:4
+Episodes:24
+First aired:09-23-2010
+Last aired:05-19-2011
+Viewers(millions):13.21</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S5 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S5">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:5
+Episodes:24
+First aired:09-22-2011
+Last aired:05-10-2012
+Viewers(millions):15.82</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S6 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S6">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:6
+Episodes:24
+First aired:09-27-2012
+Last aired:05-16-2013
+Viewers(millions):18.68</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S7 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S7">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:7
+Episodes:24
+First aired:09-26-2013
+Last aired:05-15-2014
+Viewers(millions):19.96</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S8 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S8">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:8
+Episodes:24
+First aired:09-22-2014
+Last aired:05-07-2015
+Viewers(millions):19.05</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#S9 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#S9">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons"/>
+        <rdfs:comment>Season:9
+Episodes:24
+First aired:09-21-2016
+Last aired:05-12-2016
+Viewers(millions):20.36</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Science -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Science">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Much of the series focuses on science, particularly physics. The four main male characters are employed at Caltech and have science-related occupations, as do Bernadette and Amy. The characters frequently banter about scientific theories or news (notably around the start of the show), and make science-related jokes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Science_fiction_media -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Science_fiction_media">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheTVshowElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The four main male characters are fanatical science fiction, fantasy and manga fans and souvenir collectors.
+
+They are fans of Star Trek, Star Wars, Battlestar Galactica and Doctor Who. On many occasions, the group members are dressed in pop culture roles, including Flash, Aquaman, Frodo Baggins, Superman, Batman, Spock, Doctor, Green Lantern and Thor.
+
+Like every series of games (eg World of Warcraft, Halo, Mario et al., Including fictional games such as the mysterious warlords of Caia (2011 becoming a reality) and scissors, stones, cloths and lizards Spock.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Sheldon_Cooper -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Sheldon_Cooper">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheMaleRoleIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonIndividualAwardBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Individual_achievement_in_comedy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Originally from Galveston, Texas, Sheldon was a child prodigy with an eidetic memory who began college at the age of eleven, and earned a PhD at age sixteen. He is a theoretical physicist researching quantum mechanics and string theory, and despite his IQ of 187, he finds many routine aspects of social situations difficult to grasp. He is determined to have his own way, continually boasts of his intelligence, and has an extremely ritualized way of living. Despite these quirks, he begins a relationship with Amy Farrah Fowler.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Simon_Helberg -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Simon_Helberg">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isAnActorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPlayTheRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Howard_Wolowitz"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Simon Maxwell Helberg[3] (born December 9, 1980) is an American actor, comedian, and musician. He is best known for his role as Howard Wolowitz in the sitcom The Big Bang Theory (2007–present), for which he won a Critics&apos; Choice Television Award for Best Supporting Actor in a Comedy Series, and as Cosmé McMoon in the film Florence Foster Jenkins (2016), which earned him a Golden Globe Award nomination for Best Supporting Actor in a Motion Picture.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Soft_Kitty -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Soft_Kitty">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>In the show, the song Soft Kitty was described by Sheldon as a song sung by his mother when he was ill. Its repeated use in the series popularized the song. A scene depicting the origin of the song in Sheldon&apos;s childhood is depicted in an episode of Young Sheldon, which aired on February 1, 2018. It shows Sheldon&apos;s mother Mary singing the song to her son, who is suffering with the flu.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory">
+        <rdfs:isDefinedBy>ontogies title</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The main awards won by TBBT</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Casts">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The main artors in the TBBT</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Characters">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The five main Characters in the show</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Introduction -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Introduction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The Big Bang Theory is an American television sitcom created by Chuck Lorre and Bill Prady, both of whom serve as executive producers on the series, along with Steven Molaro</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Production -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Production">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The production details about TBBT</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The famous themes of TBBT</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Seasons">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Science"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Science_fiction_media"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Soft_Kitty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#leonard_and_Penny&apos;s_relationship"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Ten seasons from 2007-2017</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Theme_song -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Theme_song">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheElementOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The Canadian alternative rock band Barenaked Ladies wrote and recorded the show&apos;s theme song, which describes the history and formation of the universe and the Earth</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Actors&apos;_salaries -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Actors&apos;_salaries">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Production"/>
+        <rdfs:comment>In the first three quarters, each of the show&apos;s three major stars Galecki, Parsons and Cuoco received up to $ 60,000. In September 2013, Bialik and Rauch renegotiated the contracts they held since the launch of the series in 2010. By the seventh season, the three main actors are estimated at $ 1 million per episode for three years and Helberg and Nayyar are also able to renegotiate their contracts. By the 10th quarter, Helberg and Nayyar and Parsons, Galecki and Cuoco reached a parity of $ 1 million per episode due to the terms of the agreement signed in 2014. In March 2017, Galecki, Parsons, Cuoco, Helberg and Nayyar cut pay by 10%, leaving Galecki, Parsons, Cuoco, Helberg and Nayyar for $ 900,000 each.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#People&apos;s_Choice_Award -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#People&apos;s_Choice_Award">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Awards"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#wasWonGroupAwardBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The People&apos;s Choice Awards is an American awards show, recognizing the people and the work of popular culture, voted on by the general public. The show has been held annually since 1975 and is currently owned by E!.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#leonard_and_Penny&apos;s_relationship -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#leonard_and_Penny&apos;s_relationship">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory_Recurring_themes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isTheRelationshipElementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#The_big_bang_theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>One of the repeating plot lines is the relationship between Leonard and Penny. Leonard was drawn to Penny&apos;s in the pilot series and their first long-standing collaboration began with Leonard&apos;s return to the North Pole from a three-month expedition after his premiere in the third season. However, when Leonard told Penny he loved her, she realized she could not say it. Leonard and Penny both date others. In season six of The 43 Special, Penny finally told Leonard she liked him. In the seventh season, Penny admits they should get married, and Leonard and Penny decide to go to Las Vegas by the end of season eight. Leonard and Penny eventually erupted in the 9th season premiere.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment>The Big Bang Theory</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
